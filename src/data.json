@@ -1,0 +1,18 @@
+{
+    "info": {
+      "title": "World of Warcraft",
+      "description": "World of Warcraft (WoW) es un juego de rol multijugador en línea masivo (MMORPG) creado por Blizzard Entertainment."
+    },
+    "image": {
+      "url": "https://nosnerds.com.br/wp-content/uploads/2022/04/wowdragonflight-capa.jpg"
+    },
+    "text": {
+        "content": "World of Warcraft (WoW) es un juego de rol multijugador en línea masivo (MMORPG) que ha cautivado a millones de jugadores en todo el mundo. En WoW, los jugadores pueden explorar un vasto y detallado mundo, completar misiones, interactuar con otros jugadores y enfrentarse a desafiantes enemigos. Es un universo épico lleno de magia, aventuras y batallas emocionantes."
+      },
+    "link": {
+      "url": "https://worldofwarcraft.blizzard.com/es-es/",
+      "label": "Sitio web oficial de WoW"
+    }
+  }
+  
+  

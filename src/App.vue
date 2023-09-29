@@ -1,21 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div id="app">
+    <InfoComponent :title="info.title" :description="info.description" />
+    <ImageComponent :imageUrl="image.url" />
+    <TextComponent :text="text.content" />
+    <LinkComponent :url="link.url" :label="link.label" />
+  </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HelloWorld from './components/HelloWorld.vue';
+<script>
+import InfoComponent from "@/components/InfoComponent.vue";
+import ImageComponent from "@/components/ImageComponent.vue";
+import TextComponent from "@/components/TextComponent.vue";
+import LinkComponent from "@/components/LinkComponent.vue";
+import data from "@/data.json";
 
-@Options({
+export default {
   components: {
-    HelloWorld,
+    InfoComponent,
+    ImageComponent,
+    TextComponent,
+    LinkComponent
   },
-})
-export default class App extends Vue {}
+  data() {
+    return {
+      info: data.info,
+      image: data.image,
+      text: data.text,
+      link: data.link
+    };
+  }
+};
 </script>
 
-<style lang="scss">
+<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
